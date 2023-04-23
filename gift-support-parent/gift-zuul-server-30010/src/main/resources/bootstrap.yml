@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:10010
+      label: master     #分支
+      name: application-zuul
+      profile: ${spring.profiles.active}      #环境 java -jar -d spring.profiles.active=test gift-eureak.jar

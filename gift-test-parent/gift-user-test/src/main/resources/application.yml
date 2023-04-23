@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: user-test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project-test?serverTimezone=GMT%2b8
+    username: root
+    password: 426218107liuf
+
+mybatis-plus:
+  type-aliases-package: com.heng.domain,com.heng.query

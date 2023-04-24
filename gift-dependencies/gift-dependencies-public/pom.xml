@@ -32,5 +32,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!-- 包含了ui界面 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <!-- 2.x基于springfox2.x，3.x基于springfox3.x-->
+            <version>3.0.2</version>
+        </dependency>
+
     </dependencies>
 </project>

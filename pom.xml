@@ -16,6 +16,8 @@
         <module>gift-basic-parent</module>
         <module>gift-support-parent</module>
         <module>gift-test-parent</module>
+        <module>gift-sysmanage-parent</module>
+        <module>gift-authorization-parent</module>
     </modules>
 
     <!--管理一些公共的属性-->
@@ -24,6 +26,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <mysql.version>8.0.32</mysql.version>
+        <mybatis.plus.version>2.2.0</mybatis.plus.version>
     </properties>
 
     <!--管理SpringBoot-->

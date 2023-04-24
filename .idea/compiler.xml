@@ -7,19 +7,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gift-user-test" />
         <module name="gift-basic-common" />
         <module name="gift-code-generator" />
-        <module name="gift-zuul-server-30010" />
+        <module name="gift-sysmanage-server-40010" />
+        <module name="gift-sysmanage-common" />
         <module name="gift-config-server-10010" />
         <module name="gift-dependencies-public" />
         <module name="gift-dependencies-core" />
+        <module name="gift-authorization-common" />
+        <module name="gift-user-test" />
+        <module name="gift-dependencies-server" />
+        <module name="gift-zuul-server-30010" />
         <module name="gift-eureka-server-20010" />
+        <module name="gift-authorization-server-40020" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gift-authorization-common" options="-parameters" />
+      <module name="gift-authorization-parent" options="-parameters" />
+      <module name="gift-authorization-server-40020" options="-parameters" />
       <module name="gift-basic-common" options="-parameters" />
       <module name="gift-basic-parent" options="-parameters" />
       <module name="gift-code-generator" options="-parameters" />
@@ -27,9 +35,13 @@
       <module name="gift-dependencies" options="-parameters" />
       <module name="gift-dependencies-core" options="-parameters" />
       <module name="gift-dependencies-public" options="-parameters" />
+      <module name="gift-dependencies-server" options="-parameters" />
       <module name="gift-eureka-server-20010" options="-parameters" />
       <module name="gift-parent" options="-parameters" />
       <module name="gift-support-parent" options="-parameters" />
+      <module name="gift-sysmanage-common" options="-parameters" />
+      <module name="gift-sysmanage-parent" options="-parameters" />
+      <module name="gift-sysmanage-server-40010" options="-parameters" />
       <module name="gift-test-parent" options="-parameters" />
       <module name="gift-user-test" options="-parameters" />
       <module name="gift-zuul-server-30010" options="-parameters" />

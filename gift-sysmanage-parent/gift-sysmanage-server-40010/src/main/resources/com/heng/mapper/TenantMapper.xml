@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heng.mapper.TenantMapper">
+
+    <select id="selectPageList" resultMap="BaseResultMap">
+        SELECT t.*, e.id AS "eid", e.username AS "eusername", tt.id AS "ttid", tt.`name` AS "ttname"
+        FROM t_tenant t LEFT JOIN t_employee e ON t.admin_id = e.id
+        LEFT JOIN t_tenant_type tt ON t.type_id = tt.id
+        <include refid="whereSql"></include>
+    </select>
+
+    <sql id="whereSql">
+        <where>
+            <if test="keyword != null and keyword != ''">
+                and (t.company_name like concat('%',#{keyword},'%') or t.address like concat('%',#{keyword},'%'))
+            </if>
+        </where>
+    </sql>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.heng.domain.Tenant">
+        <id column="id" property="id" />
+        <result column="company_name" property="companyName" />
+        <result column="company_num" property="companyNum" />
+        <result column="register_time" property="registerTime" />
+        <result column="state" property="state" />
+        <result column="address" property="address" />
+        <result column="logo" property="logo" />
+        <!--        <result column="admin_id" property="adminId" />-->
+        <!--        <result column="type_id" property="typeId" />-->
+        <association property="admin" javaType="employee">
+            <id column="eid" property="id"></id>
+            <result column="eusername" property="username"></result>
+        </association>
+        <association property="tenantType" javaType="tenantType">
+            <id column="ttid" property="id"></id>
+            <result column="ttname" property="name"></result>
+        </association>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, company_name AS companyName, company_num AS companyNum, register_time AS registerTime, state, address, logo, admin_id AS adminId, type_id AS typeId
+    </sql>
+
+</mapper>

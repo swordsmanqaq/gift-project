@@ -8,6 +8,8 @@ import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -19,6 +21,7 @@ import java.io.Serializable;
  * @since 2023-04-24
  */
 @TableName("t_tenant")
+@NotNull
 public class Tenant extends Model<Tenant> {
 
     private static final long serialVersionUID = 1L;
@@ -26,8 +29,10 @@ public class Tenant extends Model<Tenant> {
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
     @TableField("company_name")
+    @NotBlank(message = "{heng.error.sysmange.tenant.companyName.blank}")
     private String companyName;
     @TableField("company_num")
+    @NotBlank
     private String companyNum;
     @TableField("register_time")
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -36,6 +41,7 @@ public class Tenant extends Model<Tenant> {
      * 0待审核，1 审核通过 ， 2审核失败
      */
     private Integer state;
+    @NotBlank
     private String address;
     private String logo;
     /**
@@ -44,6 +50,7 @@ public class Tenant extends Model<Tenant> {
     @TableField("admin_id")
     private Long adminId;
     @TableField(exist = false)
+    @NotNull
     private Employee admin;
     /**
      * 类型id
@@ -52,6 +59,10 @@ public class Tenant extends Model<Tenant> {
     private Long typeId;
     @TableField(exist = false)
     private TenantType tenantType;
+
+    @TableField(exist = false)
+    @NotNull
+    private Long mealId;
 
 
     public Long getId() {
@@ -140,6 +151,14 @@ public class Tenant extends Model<Tenant> {
 
     public void setTypeId(Long typeId) {
         this.typeId = typeId;
+    }
+
+    public Long getMealId() {
+        return mealId;
+    }
+
+    public void setMealId(Long mealId) {
+        this.mealId = mealId;
     }
 
     @Override

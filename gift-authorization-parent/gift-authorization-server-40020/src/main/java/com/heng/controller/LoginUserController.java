@@ -34,7 +34,7 @@ public class LoginUserController {
                 loginUserService.updateById(loginUser);
             else
                 loginUserService.insert(loginUser);
-            return AjaxResult.me();
+            return AjaxResult.me().setResultObj(loginUser.getId());
         } catch (Exception e) {
             e.printStackTrace();
             return AjaxResult.me().setMessage("保存对象失败！" + e.getMessage());

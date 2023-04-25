@@ -17,6 +17,7 @@
         <module>gift-dependencies-public</module>
         <module>gift-dependencies-core</module>
         <module>gift-dependencies-server</module>
+        <module>gift-dependencies-client</module>
     </modules>
 
 </project>

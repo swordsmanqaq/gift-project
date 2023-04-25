@@ -2,6 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.heng.mapper.TenantMapper">
 
+    <insert id="saveTenantMeal">
+        insert into t_tenant_meal(meal_id,tenant_id,state) values (#{mealId},#{tenantId},#{state})
+    </insert>
+
     <select id="selectPageList" resultMap="BaseResultMap">
         SELECT t.*, e.id AS "eid", e.username AS "eusername", tt.id AS "ttid", tt.`name` AS "ttname"
         FROM t_tenant t LEFT JOIN t_employee e ON t.admin_id = e.id

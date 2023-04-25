@@ -1,9 +1,12 @@
 package com.heng.util;
 
+import com.heng.exception.ResponseCode;
+
 //Ajax请求响应对象的类
 public class AjaxResult {
     private boolean success = true;
-    private String message = "操作成功!";
+    private String message = ResponseCode.RESPONSE_CODE_200.getMessage();
+    private Integer code = ResponseCode.RESPONSE_CODE_200.getCode();
 
 
     //返回到前台对象
@@ -24,6 +27,15 @@ public class AjaxResult {
 
     public AjaxResult setMessage(String message) {
         this.message = message;
+        return this;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public AjaxResult setCode(Integer code) {
+        this.code = code;
         return this;
     }
 

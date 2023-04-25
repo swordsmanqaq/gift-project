@@ -1,4 +1,6 @@
-import Login from './views/Login.vue'
+// import Login from './views/Login.vue'
+import ShopRegister from "./views/ShopRegister";
+import Login from "./views/Login";
 import NotFound from './views/404.vue'
 import NoPermission from './views/403.vue'
 import Home from './views/Home.vue'
@@ -20,6 +22,12 @@ let routes = [
     {
         path: '/login',
         component: Login,
+        name: '',
+        hidden: true
+    },
+    {
+        path: '/shopRegister',
+        component: ShopRegister,
         name: '',
         hidden: true
     },

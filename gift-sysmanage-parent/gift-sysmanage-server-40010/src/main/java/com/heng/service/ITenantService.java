@@ -3,6 +3,7 @@ package com.heng.service;
 import com.heng.domain.Tenant;
 import com.baomidou.mybatisplus.service.IService;
 import com.heng.query.TenantQuery;
+import com.heng.util.AjaxResult;
 import com.heng.util.PageList;
 
 /**
@@ -17,4 +18,5 @@ public interface ITenantService extends IService<Tenant> {
 
     PageList selectPageList(TenantQuery query);
 
+    AjaxResult Occupancy(Tenant tenant);
 }

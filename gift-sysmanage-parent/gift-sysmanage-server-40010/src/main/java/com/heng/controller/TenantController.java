@@ -9,6 +9,7 @@ import com.heng.util.PageList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -106,4 +107,15 @@ public class TenantController {
 //        PageList pageList = new PageList<Tenant>(page.getTotal(), page.getRecords());
         return AjaxResult.me().setResultObj(pageList);
     }
+
+    /**
+     * 入驻
+     * @param tenant
+     * @return
+     */
+    @PostMapping("/settlement")
+    public AjaxResult Occupancy(@Valid @RequestBody Tenant tenant) {
+        return tenantService.Occupancy(tenant);
+    }
+
 }

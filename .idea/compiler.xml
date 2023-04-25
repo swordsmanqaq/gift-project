@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gift-dependencies-client" />
         <module name="gift-basic-common" />
         <module name="gift-code-generator" />
         <module name="gift-sysmanage-server-40010" />
@@ -18,6 +19,7 @@
         <module name="gift-user-test" />
         <module name="gift-dependencies-server" />
         <module name="gift-zuul-server-30010" />
+        <module name="gift-authorization-client" />
         <module name="gift-eureka-server-20010" />
         <module name="gift-authorization-server-40020" />
       </profile>
@@ -25,6 +27,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gift-authorization-client" options="-parameters" />
       <module name="gift-authorization-common" options="-parameters" />
       <module name="gift-authorization-parent" options="-parameters" />
       <module name="gift-authorization-server-40020" options="-parameters" />
@@ -33,6 +36,7 @@
       <module name="gift-code-generator" options="-parameters" />
       <module name="gift-config-server-10010" options="-parameters" />
       <module name="gift-dependencies" options="-parameters" />
+      <module name="gift-dependencies-client" options="-parameters" />
       <module name="gift-dependencies-core" options="-parameters" />
       <module name="gift-dependencies-public" options="-parameters" />
       <module name="gift-dependencies-server" options="-parameters" />

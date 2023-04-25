@@ -20,4 +20,6 @@ public interface TenantMapper extends BaseMapper<Tenant> {
 
     List<Tenant> selectPageList(Page<Tenant> page, TenantQuery query);
 
+    void saveTenantMeal(@Param("mealId") Long mealId, @Param("tenantId") Long tenantId, @Param("state") Integer state);
+
 }

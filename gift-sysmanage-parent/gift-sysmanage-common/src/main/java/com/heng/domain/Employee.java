@@ -31,6 +31,8 @@ public class Employee extends Model<Employee> {
      * 密码
      */
     private String password;
+    @TableField(exist = false)
+    private String confirmPassword;
     /**
      * 姓名
      */
@@ -174,6 +176,14 @@ public class Employee extends Model<Employee> {
 
     public void setLoginId(Long loginId) {
         this.loginId = loginId;
+    }
+
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 
     @Override

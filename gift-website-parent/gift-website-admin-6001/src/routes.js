@@ -1,6 +1,6 @@
 // import Login from './views/Login.vue'
 import ShopRegister from "./views/ShopRegister";
-import Login from "./views/Login";
+import Login from "./views/Login.vue";
 import NotFound from './views/404.vue'
 import NoPermission from './views/403.vue'
 import Home from './views/Home.vue'

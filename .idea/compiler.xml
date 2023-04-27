@@ -12,18 +12,23 @@
         <module name="gift-code-generator" />
         <module name="gift-sysmanage-server-40010" />
         <module name="gift-sysmanage-common" />
-        <module name="gift-config-server-10010" />
         <module name="gift-dependencies-public" />
         <module name="gift-dependencies-core" />
         <module name="gift-authorization-common" />
         <module name="gift-user-test" />
+        <module name="gift-gateway-server-30010" />
+        <module name="gift-resources-server-40030" />
         <module name="gift-dependencies-server" />
-        <module name="gift-zuul-server-30010" />
         <module name="gift-authorization-client" />
-        <module name="gift-eureka-server-20010" />
         <module name="gift-authorization-server-40020" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gift-config-server-10010" target="1.8" />
+      <module name="gift-eureka-server-20010" target="1.8" />
+      <module name="gift-gateway-server" target="1.8" />
+      <module name="gift-zuul-server-30010" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -41,7 +46,11 @@
       <module name="gift-dependencies-public" options="-parameters" />
       <module name="gift-dependencies-server" options="-parameters" />
       <module name="gift-eureka-server-20010" options="-parameters" />
+      <module name="gift-gateway-server" options="-parameters" />
+      <module name="gift-gateway-server-30010" options="-parameters" />
       <module name="gift-parent" options="-parameters" />
+      <module name="gift-resources-parent" options="-parameters" />
+      <module name="gift-resources-server-40030" options="-parameters" />
       <module name="gift-support-parent" options="-parameters" />
       <module name="gift-sysmanage-common" options="-parameters" />
       <module name="gift-sysmanage-parent" options="-parameters" />

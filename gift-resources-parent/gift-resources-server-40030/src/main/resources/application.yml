@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: gift-resources-server

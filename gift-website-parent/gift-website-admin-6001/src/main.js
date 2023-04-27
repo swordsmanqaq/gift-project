@@ -16,7 +16,7 @@ import routes from './routes.js'
 // 导入axios
 import axios from "axios"
 // 给axios设置一个默认的前缀
-axios.defaults.baseURL = "http://localhost:30010/service/";  //访问统一入口网关
+axios.defaults.baseURL = "http://localhost:30010/services/";  //访问统一入口网关
 Vue.prototype.$http = axios;
 
 import 'font-awesome/css/font-awesome.min.css'

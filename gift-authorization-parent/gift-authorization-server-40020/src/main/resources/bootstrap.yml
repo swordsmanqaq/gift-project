@@ -2,8 +2,10 @@ spring:
   profiles:
     active: dev
   cloud:
-    config:
-      uri: http://127.0.0.1:10010
-      label: master     #分支
-      name: application-authorization
-      profile: ${spring.profiles.active}      #环境 java -jar -d spring.profiles.active=test gift-eureak.jar
+    nacos:
+      config:
+        server-addr: localhost:8848  #配置中心
+        file-extension: yml         #配置文件格式
+        prefix: application-authorization
+        group: ${spring.profiles.active}-group
+        namespace: giftproject

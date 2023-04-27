@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848 #配置中心
+        file-extension: yml #配置文件格式
+        prefix: application-resources #配置前缀
+        group: ${spring.profiles.active}-group #默认分组
+        namespace: giftproject
+#file:
+#  alioss:
+#    bucket-name: bucket-gift    #上传空间bucket
+#    access-key: LTAI5tSLUFEdE58tDs6kzsrD #你的key
+#    secret-key: ibrF59PDvJZfHbaJQUrToqAgJXdJjx #你的秘钥
+#    endpoint: oss-cn-chengdu.aliyuncs.com  #上传端点

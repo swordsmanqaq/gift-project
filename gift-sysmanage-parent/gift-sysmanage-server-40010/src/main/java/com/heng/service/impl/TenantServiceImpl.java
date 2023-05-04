@@ -16,6 +16,7 @@ import com.heng.service.ITenantService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.heng.util.AjaxResult;
 import com.heng.util.PageList;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -63,7 +64,7 @@ public class TenantServiceImpl extends ServiceImpl<TenantMapper, Tenant> impleme
      * @param tenant
      */
     @Override
-    @Transactional
+    @GlobalTransactional(rollbackFor = Exception.class)
     public AjaxResult Occupancy(Tenant tenant) {
         //1、参数校验
         parameterCheck(tenant);
@@ -101,6 +102,7 @@ public class TenantServiceImpl extends ServiceImpl<TenantMapper, Tenant> impleme
         Integer state = 0;
         tenantMapper.saveTenantMeal(tenant.getMealId(),tenant.getId(),state);
         //7、添加审核日志表
+        int i = 1 / 0;
         //8、发邮件激活
         return AjaxResult.me();
     }

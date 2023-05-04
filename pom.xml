@@ -19,6 +19,7 @@
         <module>gift-sysmanage-parent</module>
         <module>gift-authorization-parent</module>
         <module>gift-resources-parent</module>
+        <module>gift-basic-parent/gift-transaction-server</module>
     </modules>
 
     <!--管理一些公共的属性-->

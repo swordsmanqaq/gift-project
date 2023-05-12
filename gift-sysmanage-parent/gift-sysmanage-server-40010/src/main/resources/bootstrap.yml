@@ -9,3 +9,13 @@ spring:
         prefix: application-sysmanage
         group: ${spring.profiles.active}-group
         namespace: giftproject
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-wait: 2000ms
+        min-idle: 2
+        max-idle: 8

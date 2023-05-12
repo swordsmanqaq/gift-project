@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heng.mapper.SpuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.heng.domain.Spu">
+        <id column="id" property="id" />
+        <result column="spu_no" property="spuNo" />
+        <result column="goods_name" property="goodsName" />
+        <result column="low_price" property="lowPrice" />
+        <result column="high_price" property="highPrice" />
+        <result column="category_id" property="categoryId" />
+        <result column="brand_id" property="brandId" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="tenant_name" property="tenantName" />
+        <result column="gmt_update" property="gmtUpdate" />
+        <result column="state" property="state" />
+        <result column="cover" property="cover" />
+        <result column="onsale_time" property="onsaleTime" />
+        <result column="offsale_time" property="offsaleTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, spu_no AS spuNo, goods_name AS goodsName, low_price AS lowPrice, high_price AS highPrice, category_id AS categoryId, brand_id AS brandId, gmt_create AS gmtCreate, tenant_id AS tenantId, tenant_name AS tenantName, gmt_update AS gmtUpdate, state, cover, onsale_time AS onsaleTime, offsale_time AS offsaleTime
+    </sql>
+
+    <update id="onsaleUpdate">
+        update t_goods_spu set `state` = #{state}, onsale_time = now() where id in
+        <foreach collection="spuIds" item="spuId" open="(" close=")" separator=",">
+            #{spuId}
+        </foreach>
+    </update>
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heng.mapper.SpecMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.heng.domain.Spec">
+        <id column="id" property="id" />
+        <result column="spec_no" property="specNo" />
+        <result column="spec_name" property="specName" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="gmt_update" property="gmtUpdate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, spec_no AS specNo, spec_name AS specName, gmt_create AS gmtCreate, gmt_update AS gmtUpdate
+    </sql>
+
+</mapper>

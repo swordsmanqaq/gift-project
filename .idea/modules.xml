@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gift-website-admin-6001.iml" filepath="$PROJECT_DIR$/gift-website-admin-6001.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-website-parent.iml" filepath="$PROJECT_DIR$/gift-website-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-website-portal.iml" filepath="$PROJECT_DIR$/gift-website-portal.iml" />
     </modules>
   </component>
 </project>

@@ -2,11 +2,23 @@ package com.heng.util;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 //分页对象：easyui只需两个属性，total(总数),datas（分页数据）就能实现分页
 public class PageList<T> {
     private long total;
     private List<T> rows = new ArrayList<>();
+
+    private Map<String, List<IdAndName>> aggsData;
+
+
+    public Map<String, List<IdAndName>> getAggsData() {
+        return aggsData;
+    }
+
+    public void setAggsData(Map<String, List<IdAndName>> aggsData) {
+        this.aggsData = aggsData;
+    }
 
     public long getTotal() {
         return total;

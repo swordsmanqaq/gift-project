@@ -30,7 +30,6 @@ import java.util.List;
  * <p>
  *  服务实现类
  * </p>
- *
  * @author Jarvis-Smith
  * @since 2023-04-24
  */
@@ -42,7 +41,6 @@ public class TenantServiceImpl extends ServiceImpl<TenantMapper, Tenant> impleme
     private TenantMapper tenantMapper;
     @Autowired
     private EmployeeMapper employeeMapper;
-
     @Autowired
     private AuthorizationClient authorizationClient;
 

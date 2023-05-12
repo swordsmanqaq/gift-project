@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>支付结果</title>
+    <script src="js/jquery.1.12.4.min.js" charset="UTF-8"></script>
+    <!--导入vue和axios-->
+    <script src="js/plugins/vue/dist/vue.js"></script>
+    <script src="js/plugins/axios/dist/axios.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<div id="myDiv"></div>
+<a href="udai_order_detail.html">订单详情</a>
+<script type="text/javascript">
+    new Vue({
+        "el":"#myDiv",
+        data:{
+        },
+        methods:{
+        },
+        mounted: function () {
+            let paramObj = parseUrlParams2Obj(location.href);
+            console.log(paramObj)
+
+            let totalAmount = paramObj.total_amount;
+            let outTradeNo = paramObj.out_trade_no;
+
+            let info = "支付成功"+totalAmount+"钱!对应的支付单为"+outTradeNo
+                +"你可以通过支付单单号,查询得到businessType和businessId,进而查询到对应的订单!给一个按钮跳转到订单详情页"
+            $("#myDiv").html(info);
+
+        }
+    });
+</script>
+</body>
+</html>

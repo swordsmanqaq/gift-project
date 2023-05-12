@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heng.mapper.SkuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.heng.domain.Sku">
+        <id column="id" property="id" />
+        <result column="sku_no" property="skuNo" />
+        <result column="sku_name" property="skuName" />
+        <result column="price" property="price" />
+        <result column="stock" property="stock" />
+        <result column="lock_stock" property="lockStock" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="spu_id" property="spuId" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="gmt_update" property="gmtUpdate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, sku_no AS skuNo, sku_name AS skuName, price, stock, lock_stock AS lockStock, tenant_id AS tenantId, spu_id AS spuId, gmt_create AS gmtCreate, gmt_update AS gmtUpdate
+    </sql>
+
+</mapper>

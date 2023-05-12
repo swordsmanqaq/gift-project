@@ -20,6 +20,10 @@
         <module>gift-authorization-parent</module>
         <module>gift-resources-parent</module>
         <module>gift-basic-parent/gift-transaction-server</module>
+        <module>gift-gift-parent</module>
+        <module>gift-gift-parent</module>
+        <module>gift-search-parent</module>
+        <module>gift-user-parent</module>
     </modules>
 
     <!--管理一些公共的属性-->

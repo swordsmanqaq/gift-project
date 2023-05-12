@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>gift-search-parent</artifactId>
+        <groupId>com.heng</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>gift-gift-search-server-40050</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.heng</groupId>
+            <artifactId>gift-gift-search-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.heng</groupId>
+            <artifactId>gift-dependencies-server</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+<!--        &lt;!&ndash; 导入es &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- 导入rocketmq -->
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <version>2.0.4</version>
+        </dependency>
+
+    </dependencies>
+</project>

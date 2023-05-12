@@ -18,9 +18,17 @@
     <file url="file://$PROJECT_DIR$/gift-dependencies/gift-dependencies-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-dependencies/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-dependencies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-gift-parent/gift-gift-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-gift-parent/gift-gift-server-40040/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-gift-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-gift-parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-resources-parent/gift-resources-server-40030/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-resources-parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-resources-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-search-parent/gift-gift-search-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-search-parent/gift-gift-search-server-40050/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-search-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-search-parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-support-parent/gift-config-server-10010/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-support-parent/gift-eureka-server-20010/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-support-parent/gift-gateway-server-30010/src/main/java" charset="UTF-8" />
@@ -36,6 +44,10 @@
     <file url="file://$PROJECT_DIR$/gift-test-parent/gift-user-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-test-parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-test-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-user-parent/gift-user-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-user-parent/gift-user-server-40060/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-user-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-user-parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heng.mapper.SpuOnsaleDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.heng.domain.SpuOnsaleDetail">
+        <id column="id" property="id" />
+        <result column="spu_id" property="spuId" />
+        <result column="cover" property="cover" />
+        <result column="name" property="name" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="tenant_name" property="tenantName" />
+        <result column="comment_count" property="commentCount" />
+        <result column="sale_count" property="saleCount" />
+        <result column="max_price" property="maxPrice" />
+        <result column="min_price" property="minPrice" />
+        <result column="spec_properties" property="specProperties" />
+        <result column="sku_properties" property="skuProperties" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, spu_id AS spuId, cover, name, tenant_id AS tenantId, tenant_name AS tenantName, comment_count AS commentCount, sale_count AS saleCount, max_price AS maxPrice, min_price AS minPrice, spec_properties AS specProperties, sku_properties AS skuProperties
+    </sql>
+
+</mapper>

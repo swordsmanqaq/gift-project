@@ -14,7 +14,10 @@
         <module name="gift-gift-search-server-40050" />
         <module name="gift-gift-common" />
         <module name="gift-gift-server-40040" />
+        <module name="gift-shopcar-server-40070" />
         <module name="gift-sysmanage-common" />
+        <module name="gift-shopcar-common" />
+        <module name="gift-gift-client" />
         <module name="gift-dependencies-public" />
         <module name="gift-dependencies-core" />
         <module name="gift-authorization-common" />
@@ -55,6 +58,7 @@
       <module name="gift-eureka-server-20010" options="-parameters" />
       <module name="gift-gateway-server" options="-parameters" />
       <module name="gift-gateway-server-30010" options="-parameters" />
+      <module name="gift-gift-client" options="-parameters" />
       <module name="gift-gift-common" options="-parameters" />
       <module name="gift-gift-parent" options="-parameters" />
       <module name="gift-gift-search-common" options="-parameters" />
@@ -64,6 +68,9 @@
       <module name="gift-resources-parent" options="-parameters" />
       <module name="gift-resources-server-40030" options="-parameters" />
       <module name="gift-search-parent" options="-parameters" />
+      <module name="gift-shopcar-common" options="-parameters" />
+      <module name="gift-shopcar-parent" options="-parameters" />
+      <module name="gift-shopcar-server-40070" options="-parameters" />
       <module name="gift-support-parent" options="-parameters" />
       <module name="gift-sysmanage-common" options="-parameters" />
       <module name="gift-sysmanage-parent" options="-parameters" />

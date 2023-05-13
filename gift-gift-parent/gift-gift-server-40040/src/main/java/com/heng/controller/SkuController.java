@@ -1,5 +1,6 @@
 package com.heng.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.heng.service.ISkuService;
 import com.heng.domain.Sku;
@@ -61,8 +62,8 @@ public class SkuController {
     @GetMapping("/{id}")
     public AjaxResult get(@PathVariable("id") Long id) {
         try {
-            Sku sku =skuService.selectById(id);
-            return AjaxResult.me().setResultObj(sku);
+            Sku sku = skuService.selectById(id);
+            return AjaxResult.me().setResultObj(JSONObject.toJSONString(sku));
         } catch (Exception e) {
             e.printStackTrace();
             return AjaxResult.me().setSuccess(false).setMessage("获取一个失败！" + e.getMessage());

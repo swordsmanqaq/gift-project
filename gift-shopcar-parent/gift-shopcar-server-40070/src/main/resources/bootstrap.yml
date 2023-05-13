@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848  #配置中心
+        file-extension: yml         #配置文件格式
+        prefix: application-shopcar
+        group: ${spring.profiles.active}-group
+        namespace: giftproject

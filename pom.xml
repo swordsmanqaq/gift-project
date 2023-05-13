@@ -24,6 +24,7 @@
         <module>gift-gift-parent</module>
         <module>gift-search-parent</module>
         <module>gift-user-parent</module>
+        <module>gift-shopcar-parent</module>
     </modules>
 
     <!--管理一些公共的属性-->

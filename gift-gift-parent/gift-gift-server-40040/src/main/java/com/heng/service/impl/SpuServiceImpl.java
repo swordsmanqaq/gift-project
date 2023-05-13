@@ -1,6 +1,5 @@
 package com.heng.service.impl;
 
-import cn.hutool.core.bean.BeanUtil;
 import com.alibaba.fastjson.JSONArray;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.heng.DTO.SpuOnsaleDTO;

@@ -52,16 +52,37 @@ public class Sku extends Model<Sku> {
      */
     @TableField("tenant_id")
     private Long tenantId;
+    @TableField("tenant_name")
+    private String tenantName;
     /**
      * spu_id
      */
     @TableField("spu_id")
     private Long spuId;
+    @TableField("spu_name")
+    private String spuName;
+
     @TableField("gmt_create")
     private Date gmtCreate;
     @TableField("gmt_update")
     private Date gmtUpdate;
 
+
+    public String getTenantName() {
+        return tenantName;
+    }
+
+    public void setTenantName(String tenantName) {
+        this.tenantName = tenantName;
+    }
+
+    public String getSpuName() {
+        return spuName;
+    }
+
+    public void setSpuName(String spuName) {
+        this.spuName = spuName;
+    }
 
     public Long getId() {
         return id;
